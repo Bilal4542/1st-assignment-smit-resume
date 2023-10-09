@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&family=Ubuntu&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    max-width: 1000px;
+    margin: 50px;
+    box-shadow: 0 50px 75px rgba(0, 0, 0, 0.1);
+    border-left: 50px solid #fff;
+    border-right: 50px solid #fff;
+}
+.container .top{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.container .top .image-box{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .image-box .box{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.container .top .image-box .box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .top .profile-text{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+.container .top .profile-text h3{
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    font-weight: 600;
+}
+.container .top .profile-text h3 span{
+    position: relative;
+    font-size: 0.5em;
+    font-weight: 300;
+}
+.container .content-box{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0px 40px 40px ;
+}
+.container .content-box h3{
+    border-left: 4px solid rgb(166, 0, 166);
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600px;
+    letter-spacing: 0.1em;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.container .content-box ul{
+    position: relative;
+    margin: 10px 0px;
+}
+.container .content-box ul li{
+    list-style: none;
+    margin: 25px 0px;
+    line-height: 1em;
+    display: flex;
+    cursor: pointer;
+}
+.container .content-box ul li ion-icon{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color:  rgb(166, 0, 166);
+}
+.container .content-box ul.education li{
+    flex-direction: column;
+    margin: 25px 0px;
+}
+.container .content-box ul.education li h5{
+    color: rgb(166, 0, 166) ;
+}
+.container .content-box ul.education li h4{
+    font-weight: 500;
+    margin: 5px 0px;
+}
+.container .content-box ul.education li h6{
+    font-weight: 300;
+    font-size: 1em;
+}
+.language li{
+    flex-direction: column;
+}
+.language li span{
+    font-size: 16px;
+    font-weight: 500;
+}
+.language .percent{
+    position: relative;
+    width: 100%;
+    background: rgb(239, 121, 239);
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(178, 3, 178);
+}
+.container .content-box ul.interest{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .content-box ul.interest li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0px;
+}
+.right-side{
+    padding-left: 40px;
+}
+.right-side p{
+    font-style: 300;
+}
+.about.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about.skills .box h4{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.about.skills .box .percent{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(239, 121, 239);
+}
+.about.skills .box .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgb(178, 3, 178);
+}
+/* Responsiveness */
+
+@media only screen and (max-width: 800px) {
+    .container .top .image-box .box img {
+            width: 50%;
+            height: 50%;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
